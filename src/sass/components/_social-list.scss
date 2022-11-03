@@ -1,0 +1,21 @@
+.socials {
+  display: flex;
+  gap: 16px;
+}
+.socials__item {
+  display: inline-flex;
+}
+.socials__link {
+  display: inline-flex;
+  fill: var(--main-txt-clr);
+  transition: fill 300ms linear, transform 300ms linear,
+    background-color 300ms linear;
+  padding: 3px;
+  border-radius: 4px;
+  &:hover,
+  &:focus {
+    fill: var(--btn-txt-clr);
+    transform: scale(1.2);
+    background-color: var(--btn-clr);
+  }
+}

@@ -1,0 +1,228 @@
+.price__title {
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+}
+
+.price__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 15px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    gap: 32px;
+  }
+}
+
+.price-card {
+  padding: 20px;
+
+  position: relative;
+
+  @extend %flex-expanded;
+  flex-direction: column;
+ 
+
+  border-radius: 40px;
+  background-color: var(--main-clr);
+  background-image: url(../images/mobile/price-bg/snot.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @include transition (background-position, background-size, background-image);
+    
+  @include retina-bcg (url(../images/mobile/price-bg/snot@2x.png));
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+
+    &:first-child {
+      margin-bottom: 12px;
+    }
+  
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    @include flex-basis(3, 15px);
+
+    background-image: url(../images/tablet/price-bg/snot.png);
+    @include retina-bcg (url(../images/tablet/price-bg/snot@2x.png));
+  }
+
+  @media screen and (min-width: 1280px) {
+  padding: 28px 28px 40px 28px;
+
+  @include flex-basis(3, 32px);
+
+  background-repeat: no-repeat;
+  background-size: 
+    contain, 
+    66px 74px, 
+    66px 74px;
+  }
+}
+
+.price-card--pos-first {
+  @media screen and (min-width: 1280px) {
+  background-position: 
+    top 0 left 0, 
+    top 403px left 0, 
+    top 257px right 24px, 
+    top 403px right 105px;
+  background-size: 
+    contain, 
+    66px 74px, 
+    66px 74px,
+    66px 74px;
+  background-image: 
+    url(../images/desktop/price-bg/snot.png),
+    url(../images/desktop/price/donut1.png),
+    url(../images/desktop/price/donut3.png),
+    url(../images/desktop/price/donut2.png);
+
+    @include retina-bcg (url(../images/desktop/price-bg/snot@2x.png),
+        url(../images/desktop/price/donut1@2x.png),
+        url(../images/desktop/price/donut3@2x.png),
+        url(../images/desktop/price/donut2@2x.png));
+
+    &:hover ,
+    &:focus {
+    background-size: 
+      contain, 
+      88px 96px, 
+      88px 88px,
+      88px 96px;
+      background-image: 
+      url(../images/desktop/price-bg/snot.png),
+      url(../images/desktop/programm/desktop-2-cooking-donut.png),
+      url(../images/desktop/programm/desktop-1-cooking-donut.png),
+      url(../images/desktop/programm/desktop-4-cooking-donut.png);
+        
+      @include retina-bcg (url(../images/desktop/price-bg/snot@2x.png),
+        url(../images/desktop/programm/desktop-2-cooking-donut@2x.png),
+        url(../images/desktop/programm/desktop-1-cooking-donut@2x.png),
+        url(../images/desktop/programm/desktop-4-cooking-donut@2x.png));
+    }
+  }
+}
+
+.price-card--pos-second {
+  @media screen and (min-width: 1280px) {
+  background-position: 
+      top 0 left 0, 
+      top 366px right 0, 
+      top 448px left 0;
+  background-image: 
+    url(../images/desktop/price-bg/snot.png),
+    url(../images/desktop/price/donut1.png),
+    url(../images/desktop/price/donut3.png); 
+
+  @include retina-bcg (
+    url(../images/desktop/price-bg/snot@2x.png),
+    url(../images/desktop/price/donut1@2x.png),
+    url(../images/desktop/price/donut3@2x.png));
+
+  &:hover ,
+  &:focus {
+    background-size: 
+      contain, 
+      88px 96px,
+      88px 88px;
+    background-image: 
+      url(../images/desktop/price-bg/snot.png),
+      url(../images/desktop/programm/desktop-2-cooking-donut.png),
+      url(../images/desktop/programm/desktop-1-cooking-donut.png); 
+
+  @include retina-bcg (
+    url(../images/desktop/price-bg/snot@2x.png),
+    url(../images/desktop/programm/desktop-2-cooking-donut@2x.png),
+    url(../images/desktop/programm/desktop-1-cooking-donut@2x.png));
+    }  
+  }     
+}
+
+.price-card--pos-third {
+  @media screen and (min-width: 1280px) {
+  background-position: 
+    top 0 left 0, 
+    top 464px right 0, 
+    bottom 0 left 44px;
+
+  background-image: 
+    url(../images/desktop/price-bg/snot.png),
+    url(../images/desktop/price/donut1.png),
+    url(../images/desktop/price/donut3.png);
+
+    @include retina-bcg (
+        url(../images/desktop/price-bg/snot@2x.png),
+        url(../images/desktop/price/donut1@2x.png),
+        url(../images/desktop/price/donut3@2x.png));
+
+  &:hover ,
+  &:focus {
+    background-size: 
+      contain, 
+      88px 96px,
+      88px 88px;
+    background-image: 
+      url(../images/desktop/price-bg/snot.png),
+      url(../images/desktop/programm/desktop-2-cooking-donut.png),
+      url(../images/desktop/programm/desktop-1-cooking-donut.png); 
+
+  @include retina-bcg (
+    url(../images/desktop/price-bg/snot@2x.png),
+    url(../images/desktop/programm/desktop-2-cooking-donut@2x.png),
+    url(../images/desktop/programm/desktop-1-cooking-donut@2x.png));
+    }
+  }  
+}
+
+.price-card__list {
+    margin-bottom: 32px;
+}
+
+.price-card__title {
+  margin-bottom: 16px;
+  text-align: center;
+
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.21;
+  font-style: italic;
+
+  color: var(--main-txt-clr);
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 40px;
+  }
+}
+
+.price-card__text {
+  font-size: 18px;
+  line-height: 1.22;
+
+  color: var(--main-txt-clr);
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 16px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    font-size: 16px;
+    line-height: 1.26;
+  }
+}
+
+.price-card__thumb {
+@extend %flex-centered;
+}

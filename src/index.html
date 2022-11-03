@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Oh my, DONUT!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./images/favicon_io/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Montserrat:ital,wght@0,400;0,500;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <!-- ❗️❗️❗️ Add partials like so for every page -->
+    <div class="page">
+      <include src="./partials/header.html"></include>
+      <main>
+        <include src="./partials/about-us.html"></include>
+        <include src="./partials/program.html"></include>
+        <include src="./partials/speakers.html"></include>
+        <include src="./partials/price.html"></include>
+        <include src="./partials/reviews.html"></include>
+        <include src="./partials/registration.html"></include>
+        <include src="./partials/contact.html"></include>
+      </main>
+      <include src="./partials/footer.html"></include>
+    </div>
+    <include src="./partials/sticky-link.html"></include>
+    <script src="./js/mobile-menu.js" type="module"></script>
+    <script src="./js/s-link.js" type="module"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="./js/slick.js" type="module"></script>
+    <script src="./js/scroll-smooth.js" type="module"></script>
+  </body>
+</html>

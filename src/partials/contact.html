@@ -1,0 +1,30 @@
+<section class="contact" id="contact">
+  <div class="contact__wrapper container">
+    <h2 class="contact__title title">Contact</h2>
+    <h3 class="contact__subtitle">We will answer any question!</h3>
+    <form class="form-contact">
+      <label class="form-contact__lable">
+        <input
+          class="form-contact__input"
+          type="email"
+          name="email"
+          placeholder="Email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          required
+        />
+      </label>
+      <label class="form-contact__lable">
+        <input
+          class="form-contact__input"
+          type="text"
+          name="question"
+          placeholder="Type your question"
+          required
+        />
+      </label>
+      <button class="btn form-contact__submit" type="submit" aria-label="Send">
+        Send
+      </button>
+    </form>
+  </div>
+</section>
