@@ -131,36 +131,7 @@
     margin-bottom: 32px;
   }
 }
-// .nav-menu {
-//   position: relative;
-//   z-index: -1;
-//   background-color: #ffffff;
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: cover;
-//   background-image: url(../images/mobile/header-bg/mobile-header-bg.png);
-//   @media (min-device-pixel-ratio: 2),
-//     (min-resolution: 192dpi),
-//     (min-resolution: 2dppx) {
-//     background-image: url(../images/mobile/header-bg/mobile-header-bg@2x.png);
-//   }
-//   @media screen and (min-width: 768px) {
-//     background-image: url(../images/tablet/header-bg/tablet-header-bg.png);
-//     @media (min-device-pixel-ratio: 2),
-//       (min-resolution: 192dpi),
-//       (min-resolution: 2dppx) {
-//       background-image: url(../images/tablet/header-bg/tablet-header-bg@2x.png);
-//     }
-//   }
-//   @media screen and (min-width: 1280px) {
-//     background-image: url(../images/desktop/header-bg/desktop-header-bg.png);
-//     @media (min-device-pixel-ratio: 2),
-//       (min-resolution: 192dpi),
-//       (min-resolution: 2dppx) {
-//       background-image: url(../images/desktop/header-bg/desktop-header-bg@2x.png);
-//     }
-//   }
-// }
+
 .no-scroll {
   overflow: hidden;
 }

@@ -1,15 +1,11 @@
 .speakers__section {
   max-width: 100%;
-  // background-color: var(--regestration-box-clr);
 }
 
 .speakers__title {
-  font-size: 24px;
-  line-height: calc(30 / 24);
   background-color: var(--regestration-box-clr);
   @media screen and (min-width: 768px) {
     font-size: 36px;
-    line-height: calc(45 / 36);
   }
 }
 
@@ -18,7 +14,6 @@
   flex-wrap: wrap;
   row-gap: 32px;
   column-gap: 20px;
-  justify-content: space-between;
   background-color: var(--main-clr);
   border-radius: 20px;
   width: 100%;
