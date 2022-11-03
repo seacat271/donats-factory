@@ -65,10 +65,10 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 8px;
-  webkit-filter: blur(8px);
+  --webkit-filter: blur(8px);
   filter: blur(8px);
   .slick-current & {
-    webkit-filter: blur(0px);
+    --webkit-filter: blur(0px);
     filter: blur(0px);
   }
 }
