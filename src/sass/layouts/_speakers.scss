@@ -81,7 +81,7 @@
   }
   .speakers__item:hover &,
   .speakers__item:focus & {
-    box-shadow: 0 0 30px #ab816c;
+    box-shadow: 0 0 30px var(--btn-clr);
   }
 }
 .speakers__meta {
@@ -91,6 +91,7 @@
   color: var(--main-txt-clr);
   @media screen and (min-width: 768px) {
     width: 152px;
+    line-height: 1.22;
   }
   @media screen and (min-width: 1280px) {
     width: 181px;
@@ -99,24 +100,19 @@
 .speakers__name {
   font-style: italic;
   font-weight: 600;
-  font-size: 16px;
-  line-height: calc(20 / 16);
   text-align: center;
   margin-bottom: 12px;
   @media screen and (min-width: 768px) {
     margin-bottom: 20px;
     font-size: 18px;
-    line-height: calc(22 / 18);
   }
 }
 .speakers__description {
   font-style: italic;
   font-weight: 500;
   font-size: 12px;
-  line-height: calc(15 / 12);
   text-align: center;
   @media screen and (min-width: 768px) {
     font-size: 14px;
-    line-height: calc(17 / 14);
   }
 }

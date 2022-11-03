@@ -13,14 +13,10 @@
     height: 595px;
   }
   .slick-center {
-    // transform: scale(1);
-    // transition: all 500ms;
     @media screen and (min-width: 768px) {
       padding-top: 20px;
       margin: 0 16px;
       margin-top: 76px;
-      // transform: scale(1.15);
-      // width: 270px;
       width: 316px;
       @media screen and (min-width: 1280px) {
         transform: scale(1);
@@ -35,45 +31,28 @@
   }
 }
 .reviews__title {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: calc(30 / 24);
-  color: #2e2520;
+  color: var(--main-txt-clr);
   margin-bottom: 20px;
+
   @media screen and (min-width: 768px) {
     margin-bottom: 7px;
   }
   @media screen and (min-width: 1280px) {
     margin-bottom: 86px;
-    font-size: 36px;
-    line-height: calc(45 / 36);
   }
 }
 
 .reviews__item {
   width: 280px;
   @media screen and (min-width: 768px) {
-    // width: 260px;
-    // transform: scale(0.58463);
     width: 152px;
-    // width: 316px;
     margin: 0 16px;
     @media screen and (min-width: 1280px) {
       width: 394px;
       transform: scale(0.713);
-      // transition: all 500ms;
     }
   }
 }
-// .slick-active,
-// .slick-cloned {
-//   @media screen and (min-width: 768px) {
-//     transform: scale(0.481);
-//   }
-//   @media screen and (min-width: 1280px) {
-//     transform: scale(0.731);
-//   }
-// }
 
 .reviews__img {
   width: 100%;
@@ -92,8 +71,6 @@
     filter: blur(0px);
   }
 }
-// .slick-current:hover &,
-//   .slick-current:focus &
 
 .reviews__name {
   margin-bottom: 8px;
@@ -101,22 +78,19 @@
   text-align: center;
   font-weight: 500;
   font-size: 14px;
-  line-height: calc(17 / 14);
+  line-height: 1.22;
   color: var(--main-txt-clr);
   @media screen and (min-width: 768px) {
     margin-bottom: 20px;
   }
   @media screen and (min-width: 1280px) {
     font-size: 16px;
-    line-height: calc(20 / 16);
+    line-height: 1.25;
   }
 }
 .reviews__comment {
   width: 280px;
   text-align: center;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: calc(20 / 16);
   color: var(--main-txt-clr);
   margin-bottom: 32px;
   @media screen and (min-width: 768px) {
@@ -125,7 +99,7 @@
   @media screen and (min-width: 1280px) {
     width: 1030px;
     font-size: 18px;
-    line-height: calc(22 / 18);
+    line-height: 1.22;
   }
   box-shadow: 0 10px 10px -15px rgba(0, 0, 0, 0.4);
 }
@@ -133,15 +107,12 @@
 .slick-dots > li > button {
   background-color: transparent;
   border: none;
-  font-size: 16px;
-  line-height: calc(20 / 16);
   color: var(--btn-clr);
 }
 .slick-dots {
   padding: 0;
-  display: flex;
+  @extend %flex-centered;
   align-items: center;
-  justify-content: center;
   &::before,
   &::after {
     content: '';
@@ -156,7 +127,7 @@
   display: none;
   &::after {
     color: var(--btn-clr);
-    content: '/6';
+    content: '- 6';
   }
   &.slick-active {
     display: contents;
